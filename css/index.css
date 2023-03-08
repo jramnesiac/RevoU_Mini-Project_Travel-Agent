@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Oswald:wght@300;400&display=swap');
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+    
+                                      /* CSS RESEEEEEEEEEEEEEEEEEEEEEEET  */
+
+
+
+* {
+	box-sizing: border-box;
+	font-family: Finger Paint;
+}
+
+
+.container{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(215,253,240,0.1),rgba(215,253,240,0.1)), url('images/olga-ga-IQMCYVVa2Wc-unsplash.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	box-sizing: border-box;
+	padding-left: 3%;
+	padding-right: 3%;
+
+	@media (min-width: 640px) {
+		.container {
+			max-width: 640px;
+		}
+	}
+	@media (min-width: 768px) {
+		.container {
+			max-width: 768px;
+		}
+	}
+	@media (min-width: 1024px) {
+		.container {
+			max-width: 1024px;
+		}
+	}
+	@media (min-width: 1280px) {
+		.container {
+			max-width: 1280px;
+		}
+	}
+	@media (min-width: 1536px) {
+		.container {
+			max-width: 1536px;
+		}
+	}
+
+}
+
+.navbar {
+	height: 19%;
+	display: flex;
+	align-items: center;
+	
+}
+
+.logo{
+	width: 90px;
+	cursor: pointer;
+	
+}
+
+
+.menu{
+	flex: 1;
+	text-align: right;
+	
+}
+.menu ul li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: #FFEFD3;
+	font-size: 15px;
+	border: solid #FFEFD3;
+	border-radius: 2px;
+	padding: 10px;
+	font-family: Finger Paint;
+}
+
+.menu li a{
+		transition: all 0.8 ease 0s;
+	}
+
+.menu li a:hover {
+	color: #001B2E;
+	background-color: #ADB6C4;
+}
+
+
+
+@media (max-width: 640px) {
+
+	.logo {
+		width: 70px;
+		padding: 10px;
+	}
+
+	.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 100px;
+	}
+	
+	ul {
+		padding: 13px;
+		padding-bottom: 0px;
+		list-style: none;
+		display: grid;
+		margin-top: -12px;
+		font-size: 20px;
+		margin-left: -113px;
+		margin-right: -109px;
+	}
+
+	.menu ul li a {
+		text-decoration: none;
+		color: #FFEFD3;
+		font-size: 15px;
+		border: solid #FFEFD3;
+		border-radius: 5px;
+		padding: 5px;
+		font-family: Finger Paint;
+	}
+
+	.menu ul li {
+		list-style: none;
+		display: inline-block;
+		margin-left: auto;
+		padding: 8px;
+		margin-right: auto;
+		margin-bottom: 3px;
+	}
+
+	.hero-caption {
+		display: flex;
+		justify-content: flex-start;
+		height: 20%;
+		align-items: center;
+		font-family: Finger Paint;
+		font-size: 30px;
+		color: #FFEFD3;
+		
+	}
+}
+
+
+.hero-caption {
+	display: flex;
+	justify-content: center;
+	height: 75%;
+	align-items: center;
+	font-family: Finger Paint;
+	font-size: 30px;
+	color: #FFEFD3;
+	
+}
+
+.hero {
+	flex-basis: 50%;
+}
+
+h1 {
+	font-family: Finger Paint;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+
+p {
+	font-family: oswald;
+	font-size: 20px;
+}
+
+button {
+	cursor: pointer;
+	padding: 8px;
+	border: solid #737373;
+	background-color: transparent;
+	color: #FFEFD3;
+	border-radius: 5px;
+
+}
+
+button:hover {
+	color: #001B2E;
+	background-color: #ADB6C4;
+}
