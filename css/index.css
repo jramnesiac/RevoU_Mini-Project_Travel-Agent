@@ -1,71 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Oswald:wght@300;400&display=swap');
 
-
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-    
-                                      /* CSS RESEEEEEEEEEEEEEEEEEEEEEEET  */
-
-
-
 * {
 	box-sizing: border-box;
 	font-family: Finger Paint;
+	
 }
 
 
 .container{
 	width: 100%;
 	height: 100vh;
-	background-image: linear-gradient(rgba(215,253,240,0.1),rgba(215,253,240,0.1)), url('/css/assets/images/olga-ga-IQMCYVVa2Wc-unsplash.jpg');
+	background-image: linear-gradient(rgba(215,253,240,0.1),rgba(215,253,240,0.1)), url('images/olga-ga-IQMCYVVa2Wc-unsplash.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -200,8 +145,9 @@ table {
 		font-family: Finger Paint;
 		font-size: 30px;
 		color: #FFEFD3;
-		
 	}
+	
+
 }
 
 
@@ -227,17 +173,26 @@ h1 {
 }
 
 p {
-	font-family: oswald;
+	font-family: Oswald;
 	font-size: 20px;
+	padding-bottom: 15px;
+}
+
+.btn {
+	padding: 15px;
+	font-size: 15px;
+	background-color: transparent;
+	margin-left: 10px;
+	
 }
 
 button {
 	cursor: pointer;
-	padding: 8px;
-	border: solid #737373;
+	border: solid #FFEFD3;
 	background-color: transparent;
 	color: #FFEFD3;
 	border-radius: 5px;
+	font-family: Finger Paint;
 
 }
 
