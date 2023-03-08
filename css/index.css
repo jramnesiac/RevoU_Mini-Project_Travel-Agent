@@ -7,7 +7,8 @@
 }
 
 
-.container{
+
+.head-wrap{
 	width: 100%;
 	height: 100vh;
 	background-image: linear-gradient(rgba(215,253,240,0.1),rgba(215,253,240,0.1)), url('images/olga-ga-IQMCYVVa2Wc-unsplash.jpg');
@@ -17,33 +18,6 @@
 	box-sizing: border-box;
 	padding-left: 3%;
 	padding-right: 3%;
-
-	@media (min-width: 640px) {
-		.container {
-			max-width: 640px;
-		}
-	}
-	@media (min-width: 768px) {
-		.container {
-			max-width: 768px;
-		}
-	}
-	@media (min-width: 1024px) {
-		.container {
-			max-width: 1024px;
-		}
-	}
-	@media (min-width: 1280px) {
-		.container {
-			max-width: 1280px;
-		}
-	}
-	@media (min-width: 1536px) {
-		.container {
-			max-width: 1536px;
-		}
-	}
-
 }
 
 .navbar {
@@ -140,14 +114,16 @@
 	.hero-caption {
 		display: flex;
 		justify-content: flex-start;
-		height: 20%;
+		height: 60%;
 		align-items: center;
 		font-family: Finger Paint;
 		font-size: 30px;
 		color: #FFEFD3;
 	}
 	
-
+.btn {
+	margin-left: 98px;
+}
 }
 
 
@@ -162,7 +138,7 @@
 	
 }
 
-.hero {
+.hero.title {
 	flex-basis: 50%;
 }
 
@@ -182,7 +158,7 @@ p {
 	padding: 15px;
 	font-size: 15px;
 	background-color: transparent;
-	margin-left: 10px;
+	margin-left: 80px;
 	
 }
 
