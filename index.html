@@ -11,16 +11,16 @@
   </head>
   <body>
     <header class="head-wrap">
-        <div class="navbar">
+        <div class="navbar" id="nav">
           <img
             src="./css/assets/images/logo No_Hypervent.svg"
             class="logo"
             alt="no_hypervent"/>
           <nav class="menu">
             <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">THE DESTINATION</a></li>
-              <li><a href="#">RESERVE NOW</a></li>
+              <li><a href="#nav">HOME</a></li>
+              <li><a href="#testimony">THE DESTINATION</a></li>
+              <li><a href="#reserve">RESERVE NOW</a></li>
             </ul>
           </nav>
         </div>
@@ -36,7 +36,7 @@
           </section>
         <section>
     </header>
-   <div class="hero-container">
+   <main class="hero-container" id="testimony">
     <div class="hero-slider">
       <div class="slide active">
         <img src="./css/images/clint-bustrillos-1CfmH5WGwMQ-unsplash.jpg" alt="diver1">
@@ -90,7 +90,96 @@
         <div class="slide-icon"></div>
       </div>
     </div>
+  </main>
+  <main class="slider-testimony">
+    <div class="slide-container swiper">
+      <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                          <img src="./css/images/bali.jpg" alt="" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Bali</h2>
+                      <p class="description">Nusa Penida was created with a deep respect for nature. Unwind and enjoy refreshing beverages as the sun sets amidst the majestic Mount Agung..</p>
+
+                      <button class="button">RESERVE NOW</button>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                          <img src="./css/images/asutralia.jpg" class="card-img">
+                      </div>
+                  </div>
+
+                  <div class="card-content">
+                      <h2 class="name">Australia</h2>
+                      <p class="description">Book Your Liveaboard Trip in Australia Today - Customer Support 24/7. Found Cheaper Elsewhere? Contact Us & We Will Match the Price or Beat it. Flexible Booking Terms.</p>
+
+                      <button class="button">RESERVE NOW</button>
+                  </div>
+              </div>
+              <div class="card swiper-slide">
+                  <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                          <img src="./css/images/hawai.jpg" class="card-img">
+                      </div>
+                  </div>
+                  <div class="card-content">
+                      <h2 class="name">Hawaii</h2>
+                      <p class="description">Hawaii's volcanic origins and isolated geographical location make for a whirlwind of scuba diving options to explore. From diving with Galapagos sharks.</p>
+                      <button class="button">RESERVE NOW</button>
+                  </div>
+          </div>
+  
+  </main>
+<main class="contact-wrapper" id="reserve">
+  <div class="wrapper">
+    <h6>RESERVE NOW</h6>
+    <div id="error_message">
+       
+    </div>
+    <form action="" id="myform" onsubmit = "return validate();">
+      <div class="input_field">
+          <input type="text" placeholder="Name" id="name">
+      </div>
+      <div class="input_field">
+          <input type="text" placeholder="Alamat" id="alamat">
+      </div>
+      <div class="input_field">
+          <input type="text" placeholder="No. HP" id="nohp">
+      </div>
+      <div class="input_field">
+          <input type="text" placeholder="Email" id="email">
+      </div>
+      <div class="input_field">
+          <textarea placeholder="Pesan Tambahan" id="message"></textarea>
+      </div>
+      <div class="btn">
+          <input type="submit">
+      </div>
+    </form>
   </div>
+</main>
+<footer class="footer-wrap">
+  <div class="footer-content">
+    <h3>No Hypervent</h3>
+    <p>Mari Berbahagia Bersama Kami Disini</p>
+</div>
+<div class="footer-bottom">
+    <p>copyright &copy;2023 No Hypervent. designed by <span>Jr_amnesiac</span></p>
+</div>
+</footer>
   <script src="./js/index.js"></script>
 </body>
 </html>

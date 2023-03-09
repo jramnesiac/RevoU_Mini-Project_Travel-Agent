@@ -192,7 +192,7 @@ button:hover {
 
 
 
-						/* ----------- MAIN ------------ */
+						/* ----------- MAIN_HERO ------------ */
 
 
 
@@ -335,4 +335,248 @@ button:hover {
   .hero-slider .slide .info p{
     font-size: 0.9em;
   }
+}
+
+							/* ----------- MAIN_HERO ------------ */
+
+
+
+							/* ----------- MAIN_CARD ------------ */
+
+
+
+.slider-testimony {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3FAFF;
+}
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #04395E;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #04395E;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #6E93f7;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #707070;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+.contact-wrapper {
+	background-color: #F3FAFF;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.wrapper{
+	max-width: 350px;
+	width: 100%;
+	padding: 25px;
+	border-radius: 5px;
+	
+  }
+  
+  .wrapper h6{
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #001B2E;
+	margin-left: -5px;
+  }
+  
+  .wrapper .input_field{
+	margin-bottom: 10px;
+  }
+  
+  .wrapper .input_field input[type="text"],
+  .wrapper textarea{
+	border: 1px solid #e0e0e0;
+	width: 100%;
+	padding: 10px;
+  }
+  
+  .wrapper textarea{
+	resize: none;
+	height: 80px;
+  }
+  
+  .wrapper .btn input[type="submit"]{
+	border: 0px;
+	margin-top: 15px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	background: #04395E;
+	color: #F3FAFF;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: bold;
+	border-radius: 25px;
+	cursor: pointer;
+  }
+  
+  #error_message{
+	margin-bottom: 20px;
+	background: #6E93f7;
+	padding: 0px;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+  }
+
+  footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #001B2E;
+    height: auto;
+    width: 100vw;
+    font-family: Finger Paint;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
