@@ -117,6 +117,7 @@
 
 	.btn {
 		margin-left: 50px;
+		text-decoration: none;
 	}
 
 	.hero-caption {
@@ -132,6 +133,7 @@
 
 .btn {
 	margin-left: 100px;
+	text-decoration: none;
 }
 
 
@@ -165,10 +167,14 @@ p {
 }
 
 .btn {
+	font-family: Finger Paint;
 	padding: 15px;
 	font-size: 15px;
 	background-color: transparent;
 	margin-left: 80px;
+	color: #FFEFD3;
+	text-decoration: none;
+	
 	
 }
 
@@ -179,6 +185,7 @@ button {
 	color: #FFEFD3;
 	border-radius: 5px;
 	font-family: Finger Paint;
+	text-decoration: none;
 
 }
 
@@ -511,16 +518,17 @@ button:hover {
 	transition: all 0.5s ease;
   }
 
-  footer{
+  footer {
     bottom: 0;
     left: 0;
     right: 0;
     background: #001B2E;
     height: auto;
-    width: 100vw;
+    width: 100%;
     font-family: Finger Paint;
     padding-top: 40px;
     color: #fff;
+	margin-left: auto;
 }
 .footer-content{
     display: flex;
@@ -541,34 +549,13 @@ button:hover {
     line-height: 28px;
     font-size: 14px;
 }
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0;
-}
-.socials li{
-    margin: 0 10px;
-}
-.socials a{
-    text-decoration: none;
-    color: #fff;
-}
-.socials a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-
-}
-.socials a:hover i{
-    color: aqua;
-}
 
 .footer-bottom{
-    background: #000;
-    width: 100vw;
-    padding: 20px 0;
+	background-color: #6E93f7;
+    width: 100%;
+    padding: 26px 0;
     text-align: center;
+    margin-left: -2px;
 }
 .footer-bottom p{
     font-size: 14px;
