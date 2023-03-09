@@ -553,9 +553,9 @@ button:hover {
 .footer-bottom{
 	background-color: #6E93f7;
     width: 100%;
-    padding: 26px 0;
+    padding: 34px 0;
     text-align: center;
-    margin-left: -2px;
+    margin-left: 0;
 }
 .footer-bottom p{
     font-size: 14px;
