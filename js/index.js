@@ -74,6 +74,10 @@
       });
 
 
+
+                                    //----validate------//
+
+
       function validate(){
         var name = document.getElementById("name").value;
         var subject = document.getElementById("alamat").value;
@@ -90,12 +94,12 @@
           error_message.innerHTML = text;
           return false;
         }
-        if(subject.length < 10){
+        if(subject.length < 5){
           text = "Tuliskan Alamat yg benar";
           error_message.innerHTML = text;
           return false;
         }
-        if(isNaN(phone) || phone.length != 10){
+        if(isNaN(phone) || phone.length != 12){
           text = "masukin no HP yaa";
           error_message.innerHTML = text;
           return false;
@@ -105,12 +109,12 @@
           error_message.innerHTML = text;
           return false;
         }
-        if(message.length <= 140){
-          text = "Jangaan kepanjangan harus 140 kata";
+        if(message.length <="5"){
+          text = "Wajib di Tulis Dengan Kata-Kata Itu";
           error_message.innerHTML = text;
           return false;
         }
-        alert("Form Submitted Successfully!");
+        alert("OKEE SEMUANYA SUDAH TERKIRIM, TERIMAKASIH SUDAH BERBISNIS DENGAN NO-HYPERVENT");
         return true;
       }
 
